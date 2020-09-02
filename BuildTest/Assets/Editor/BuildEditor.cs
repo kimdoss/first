@@ -10,7 +10,7 @@ public class BuildEditor : MonoBehaviour
         Debug.Log("Build Player");
 
         UnityEditor.BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
-        buildPlayerOptions.locationPathName = "Bin/TestAPK";
+        buildPlayerOptions.locationPathName = "TestAPK";
         buildPlayerOptions.target = BuildTarget.Android;
 
         var buildReport = BuildPipeline.BuildPlayer(buildPlayerOptions);
